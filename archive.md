@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog Archive
+title: 博物学会档案馆
 ---
 
 {% for tag in site.tags %}
