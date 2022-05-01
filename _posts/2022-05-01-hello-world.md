@@ -6,6 +6,6 @@ tags: 记录
 
 快说: 你好, 世界!
 
-```python
+{% highlight python %}
 print('Hello World!')
-```
+{% endhighlight %}
