@@ -1,0 +1,248 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Wenqian's Homepage"
+# theme: hugo-profile 
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blogs Pos
+      url: /blogs
+      weight: 1
+    # - identifier: blog
+    #   name: News
+    #   url: /news
+    #   weight: 2
+    # Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Wenqian's Homepage"
+  description: Welcome!
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/wizard.svg"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+    defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandLogo: "/wizard.svg" # Logo for the brand | default is the favicon variable
+    showBrandLogo: true # Show brand logo in nav bar | default is true
+    brandName: "Wenqian's Homepage" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : false
+    enableSeparator: true
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "images/wenqian.jpg"
+    content: |-
+
+      Hello there! I'm Wenqian Xu, currently pursuing my master's degree at the School of Statistics and Management, Shanghai University of Finance and Economics(SUFE), under the guidance of [Fan Zhou](https://scholar.google.com/citations?hl=en&user=4QJkjl0AAAAJ). I obtained my B.Sc. in Statistics from the School of Economics and Management, China University of Geosciences, where I was advised by [Deyi Xu](https://jgxy.cug.edu.cn/info/1161/6143.htm) and [Yongguang Zhu](https://scholar.google.com/citations?user=rpNV_GYAAAAJ&hl=en).
+
+      My *research interests* are centered around **model-based reinforcement learning** and **explainable AI**. I was involved in a related project at Zhejiang Lab. You can view some of my completed projects [here](./#projects).
+
+      Additionally, I maintain a [Chinese Page](./pages-zn/) where I record my life using Mandarin.
+
+    
+    skills:
+      enable: false
+      title: "Research Interests:"
+      items:
+        - "Explainable AI"
+        - "Reinforcement Learning"
+        - "Sensitivity Analysis"
+
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master of Science in Applied Statistics"
+        school:
+          name: "Shanghai University of Finance and Economics"
+          url: "https://english.sufe.edu.cn"
+        date: "Sep 2022 -- Present(expected Jun 2024)"
+        GPA: "3.58 out of 4.0"
+        content: |-
+          - Second-class academic scholarship(2022, 2023)
+      - title: "Bachelor of Science in Statistics"
+        school:
+          name: "China University of Geosciences"
+          url: "https://en.cug.edu.cn/"
+        date: "Sep 2018 -- Jun 2022"
+        GPA: "4.04 out of 5.0"
+        content: |-
+          - Ranking: 1/26
+          - 13th Li Siguang Program (selective, <40 students annually)
+          - Outstanding Undergraduate Thesis (<5\% awarded)
+          - National Scholarship(2019), Academician Scholarship(2021)
+        # featuredLink:
+        #   enable: true
+        #   name: "My academic record"
+        #   url: "https://example.com"
+      # - title: "High School"
+      #   school:
+      #     name: "Thomas Jefferson High School for Science and Technology."
+      #     url: "https://example.org"
+      #   GPA: "4.2 out of 5.0"
+      #   featuredLink:
+      #     enable: true
+      #     url: "https://example.com"
+
+  # projects
+  projects:
+    enable: true
+    title: "Projects and Publications"
+    items:
+      - title: InfluenceDriven Training
+        content: Enhancing Training Robustness through Influence Measurement
+        image: /images/projects/fi_comp_cover.png
+        featured:
+          name: Webpage
+          openInNewTab: false
+          link: /publication/fi_computation/
+        badges:
+          - "Explainable AI"
+          - "Sensitivity Analysis"
+      - title: MBRL with BDE
+        content: Improvement Research on RL Algorithms Based on Bayesian Dynamic Ensemble
+        image: /images/projects/cartpole.png
+        featured:
+          name: Webpage
+          openInNewTab: false
+          link: /publication/robust_mbrl/
+        badges:
+          - "Reinforcement Learning"
+      - title: Prochlorococcus and Global Warming
+        content: Diverse Subclade Differentiation Attributed to the Ubiquity of Prochlorococcus High-Light-Adapted Clade II
+        image: /images/projects/global_warming.png
+        featured:
+          name: Link
+          openInNewTab: true
+          link: https://journals.asm.org/doi/abs/10.1128/mbio.03027-21
+        badges:
+          - "Interdisciplinary Studies"
+          
+        # links:
+        #   - icon: fa fa-envelope
+        #     url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/hugo-profile
+        #   - icon: fab fa-twitter
+        #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/Pi-Xu
+      linkedin: https://www.linkedin.com/in/wenqian-xu-254391245
+      email: wenqian.pi.x@gmail.com
+      # twitter: https://twitter.com
+      # instagram: https://instagram.com
+      # facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    toc: true
+    readTime:
+      enable: false
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
