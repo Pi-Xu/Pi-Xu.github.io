@@ -1,7 +1,7 @@
 ---
 title: "Issue with Recording Videos in Mujoco Environment"
 date: 2024-01-08T22:37:39+08:00
-draft: true
+draft: false
 author:
 tags: [mujoco-py, rl-env]
 image:
