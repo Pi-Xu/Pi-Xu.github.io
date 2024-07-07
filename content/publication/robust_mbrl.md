@@ -112,7 +112,10 @@ $$
 
 We have validated the effectiveness of our algorithm in classical control environment and the Mujoco environment. During the imagination phase, we employed different inference methods, namely MBPO and Simple Averaging. Our findings indicate that our approach generally outperforms the comparative methods.
 
-![image](/images/bde/bde_overall_results.jpg)
+<!-- ![image](/images/bde/bde_overall_results.jpg#pic_center =100x100) -->
+<center>
+<img src=/images/bde/bde_overall_results.jpg width="600"/>
+</center>
 
 ### Ablaition Study
 
