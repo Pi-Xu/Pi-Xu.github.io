@@ -59,7 +59,7 @@ Then we sort all the samples in \(\mathcal{U}\) based on \(\operatorname{FI}^{\t
 
 \\(\text{FI}^{util}\\) can effectively estimate each sample’s influence on model performance. We employ Algorithm 1 to trim "sensitive samples". The latest method Influence Value, proposed by <cite>Chhabra et al.[^1]</cite>, serves as the primary baseline model for comparison in the experiments conducted in this subsection. We verify that our algorithm can better improve both linear and nonlinear models’ performance on synthetic datasets, even for some datasets with outliers.
 
-[^1]: Anshuman Chhabra, Peizhao Li, Prasant Mohapatra, and Hongfu Liu. "what data benefits my classifier?" enhancing model performance and interpretability through influence-based data selection. In _The Twelfth International Conference on Learning Representations_, 2024. URL https://openreview.net/forum?id=HE9eUQlAvo.
+[^1]: Chhabra, Anshuman, et al. "" What Data Benefits My Classifier?" Enhancing Model Performance and Interpretability through Influence-Based Data Selection." The Twelfth International Conference on Learning Representations. 2024.
 
 Logistic regression is employed for this binary classification task. We first generate several datasets by sampling from two isotropic 2D Gaussian distributions. Each dataset consists of 150 training, 100 validation, and 600 test data. The experimental settings in this scenario are consistent with the study by <cite>Chhabra et al.[^1]</cite>. Our method improves model performance better than theirs in most cases by trimming 5, 10 and 20 samples respectively.Moreover, it can be observed that *Influence Value* tends to trim samples from a particular class under certain conditions, as shown in Figure 1 C and G.
 
@@ -70,6 +70,11 @@ Considering extending our method to nonlinear cases, we generate a non-linearly 
 ![image](/images/fi_computation/figure3.jpg)
 
 ### Active Learning
+
+> Note: The results need to be updated. We have conducted experiments on datasets such as UCI, CIFAR10, MNIST, EMNIST, and SVHN. Our method outperforms others like <cite>PowerBald [^2]</cite> and <cite> EPIG [^3]</cite> under conditions of imbalanced and redundant data labels. These results will be updated after we submit our paper to ICLR 2025.
+
+[^2]: Kirsch, Andreas, et al. "Stochastic Batch Acquisition: A Simple Baseline for Deep Active Learning." _Transactions on Machine Learning Research._ PMLR, 2023.
+[^3]: Smith, Freddie Bickford, et al. "Prediction-oriented bayesian active learning." *International Conference on Artificial Intelligence and Statistics.* PMLR, 2023.
 
 We have also conducted experiments on some real datasets and compared various methods of Active Learning. In image classification task, we implement a simple CNN on MNIST and validate the efficacy of our method. The simple CNN is designed with three convolutional layers(with batch normalization and ReLU activation), two fully connected layers, optional dropout regularization, and 10-class output. MNIST contains 60,000 training samples, and we only use a small subset for initially training model due to the simplicity of the task. The experiments are repeated for 5 circles, and 15 rounds of annotation queries is conducted for per circle. In each round, we select 20 samples with highest \\(\operatorname{FI}^{\textit{active}}\\) adding to the labeled pool. We present three rounds of annotation queries in Figure 6(left). It is evident that \\(\operatorname{FI}^{\textit{active}}\\) can identify those points that are difficult for the current model to "learn". As is shown in Figure 6(right), our method maintains high accuracy throughout the most rounds and consistently ranks among the top-performing methods.
 
