@@ -57,6 +57,9 @@ Then we sort all the samples in \(\mathcal{U}\) based on \(\operatorname{FI}^{\t
 
 ### Enhancing Training Robustness
 
+> Note: We will add some results with real-world data after we submit our paper to ICLR 2025.
+
+
 \\(\text{FI}^{util}\\) can effectively estimate each sample’s influence on model performance. We employ Algorithm 1 to trim "sensitive samples". The latest method Influence Value, proposed by <cite>Chhabra et al.[^1]</cite>, serves as the primary baseline model for comparison in the experiments conducted in this subsection. We verify that our algorithm can better improve both linear and nonlinear models’ performance on synthetic datasets, even for some datasets with outliers.
 
 [^1]: Chhabra, Anshuman, et al. "" What Data Benefits My Classifier?" Enhancing Model Performance and Interpretability through Influence-Based Data Selection." The Twelfth International Conference on Learning Representations. 2024.
