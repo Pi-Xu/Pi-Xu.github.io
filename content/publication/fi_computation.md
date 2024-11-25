@@ -57,7 +57,7 @@ Then we sort all the samples in \(\mathcal{U}\) based on \(\operatorname{FI}^{\t
 
 ### Enhancing Training Robustness
 
-> Note: We will add some results with real-world data after we submit our paper to ICLR 2025.
+> Note: We will add some results with real-world data after our paper has been accepted.
 
 
 \\(\text{FI}^{util}\\) can effectively estimate each sample’s influence on model performance. We employ Algorithm 1 to trim "sensitive samples". The latest method Influence Value, proposed by <cite>Chhabra et al.[^1]</cite>, serves as the primary baseline model for comparison in the experiments conducted in this subsection. We verify that our algorithm can better improve both linear and nonlinear models’ performance on synthetic datasets, even for some datasets with outliers.
@@ -74,7 +74,7 @@ Considering extending our method to nonlinear cases, we generate a non-linearly 
 
 ### Active Learning
 
-> Note: The results need to be updated. We have conducted experiments on datasets such as UCI, CIFAR10, MNIST, EMNIST, and SVHN. Our method outperforms others like <cite>PowerBald [^2]</cite> and <cite> EPIG [^3]</cite> under conditions of imbalanced and redundant data labels. These results will be updated after we submit our paper to ICLR 2025.
+> Note: The results need to be updated. We have conducted experiments on datasets such as UCI, CIFAR10, MNIST, EMNIST, and SVHN. Our method outperforms others like <cite>PowerBald [^2]</cite> and <cite> EPIG [^3]</cite> under conditions of imbalanced and redundant data labels. We will update these results after our paper has been accepted.
 
 [^2]: Kirsch, Andreas, et al. "Stochastic Batch Acquisition: A Simple Baseline for Deep Active Learning." _Transactions on Machine Learning Research._ PMLR, 2023.
 [^3]: Smith, Freddie Bickford, et al. "Prediction-oriented bayesian active learning." *International Conference on Artificial Intelligence and Statistics.* PMLR, 2023.
