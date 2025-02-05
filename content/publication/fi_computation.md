@@ -15,8 +15,8 @@ mathjax: true
     <title>Text Highlight Example</title>
     <style>
         .highlight {
-            background-color: yellow; /* 设置背景颜色为黄色 */
-            font-weight: bold; /* 设置字体为粗体 */
+            background-color: yellow;
+            font-weight: bold; 
         }
     </style>
 </head>
@@ -26,6 +26,10 @@ mathjax: true
 </center>
 
 In the realm of machine learning, the quest for robust and accurate models is incessant. One fundamental aspect of achieving model robustness is determining which data points in the training set should be removed and which high-quality, potentially unlabeled data points outside the training set should be included. To accomplish this, a proper metric is required to evaluate the importance of each datum in improving model performance. This paper proposes using the influence measure as a metric to assess the impact of training data on the model’s performance on the test set. Additionally, we introduce a data selection method for improving the training set and a dynamic active learning algorithm based on the influence measure. We demonstrate the effectiveness of the proposed algorithms through comprehensive simulations and real-world datasets.
+
+> Our paper has been accepted to ICLR 2025! 🎉  
+> 
+> You can check out our paper at this [link](https://openreview.net/pdf?id=KjBG4JNOc2)
 
 ## Method
 
@@ -57,7 +61,7 @@ Then we sort all the samples in \(\mathcal{U}\) based on \(\operatorname{FI}^{\t
 
 ### Enhancing Training Robustness
 
-> Note: We will add some results with real-world data after our paper has been accepted.
+> Note: We will update the results with real-world data very soon. Meanwhile, you may refer to this [link](https://openreview.net/pdf?id=KjBG4JNOc2)
 
 
 \\(\text{FI}^{util}\\) can effectively estimate each sample’s influence on model performance. We employ Algorithm 1 to trim "sensitive samples". The latest method Influence Value, proposed by <cite>Chhabra et al.[^1]</cite>, serves as the primary baseline model for comparison in the experiments conducted in this subsection. We verify that our algorithm can better improve both linear and nonlinear models’ performance on synthetic datasets, even for some datasets with outliers.
@@ -74,7 +78,8 @@ Considering extending our method to nonlinear cases, we generate a non-linearly 
 
 ### Active Learning
 
-> Note: The results need to be updated. We have conducted experiments on datasets such as UCI, CIFAR10, MNIST, EMNIST, and SVHN. Our method outperforms others like <cite>PowerBald [^2]</cite> and <cite> EPIG [^3]</cite> under conditions of imbalanced and redundant data labels. We will update these results after our paper has been accepted.
+> Note: The results need to be updated. We have conducted experiments on datasets such as UCI, CIFAR10, MNIST, EMNIST, and SVHN. Our method outperforms others like <cite>PowerBald [^2]</cite> and <cite> EPIG [^3]</cite> under conditions of imbalanced and redundant data labels. We will update the results with real-world data very soon. Meanwhile, you may refer to this [link](https://openreview.net/pdf?id=KjBG4JNOc2)
+
 
 [^2]: Kirsch, Andreas, et al. "Stochastic Batch Acquisition: A Simple Baseline for Deep Active Learning." _Transactions on Machine Learning Research._ PMLR, 2023.
 [^3]: Smith, Freddie Bickford, et al. "Prediction-oriented bayesian active learning." *International Conference on Artificial Intelligence and Statistics.* PMLR, 2023.

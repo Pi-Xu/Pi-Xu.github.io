@@ -1,3 +1,5 @@
+
+
 {{ if .Site.Params.projects.enable | default false }}
 <section id="projects" class="py-5">
     <div class="container">
@@ -25,7 +27,11 @@
                         {{ range .links }}
                         <span class="m-1 mx-2">
                             <a href="{{ .url }}" {{ if .featured.openInNewTab | default false }}target="_blank"{{ end }}>
-                                <i class="{{ .icon }}"></i>
+                                {{ if hasPrefix .icon "http" | or (hasPrefix .icon "/") }}
+                                    <img src="{{ .icon }}" alt="icon" width="72" height="48">
+                                {{ else }}
+                                    <i class="{{ .icon }}"></i>
+                                {{ end }}
                             </a>
                         </span>
                         {{ end }}

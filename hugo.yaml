@@ -169,9 +169,17 @@ params:
           name: Webpage
           openInNewTab: false
           link: /publication/fi_computation/
+        # featured:
+        #   openInNewTab: true
+        #   name: "ICLR 2025"
+        #   link: https://openreview.net/pdf?id=KjBG4JNOc2
+        links:
+          - icon: "/ICLR-logo.svg"
+            url: https://openreview.net/pdf?id=KjBG4JNOc2
         badges:
           - "Explainable AI"
           - "Sensitivity Analysis"
+          - "ICLR 2025"
       - title: MBRL with BDE
         content: Improvement Research on RL Algorithms Based on Bayesian Dynamic Ensemble
         image: /images/projects/cartpole.png
