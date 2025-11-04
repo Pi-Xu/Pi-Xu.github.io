@@ -103,17 +103,6 @@ params:
     image: "images/wenqian.jpg"
     content: |-
 
-      Hello there! I'm Wenqian Xu, currently pursuing my master's degree at the School of Statistics and Management, Shanghai University of Finance and Economics(SUFE), under the guidance of [Fan Zhou](https://scholar.google.com/citations?hl=en&user=4QJkjl0AAAAJ). I obtained my B.Sc. in Statistics from the School of Economics and Management, China University of Geosciences, where I was advised by [Deyi Xu](https://jgxy.cug.edu.cn/info/1161/6143.htm) and [Yongguang Zhu](https://scholar.google.com/citations?user=rpNV_GYAAAAJ&hl=en).
-      
-      My research interests are centered around **Model-Based Reinforcement Learning, Large Language Models, Explainable AI**, and **Visualization**. I focus on optimizing model training processes and enhancing learning efficiency through **Active Learning** strategies. You can view some of my completed projects [here](./#projects).
-      
-
-      Hello! I'm Wenqian Xu. I recently completed my M.Sc. in Statistics and Management at Shanghai University of Finance and Economics (SUFE), where I worked with Prof. Fan Zhou. I received my B.Sc. in Statistics from the China University of Geosciences, advised by Prof. Deyi Xu and Prof. Yongguang Zhu. I am currently collaborating with Dr. Feng Ji at the University of Toronto on computational modeling in psychology.
-
-      My research focuses on how humans learn and make decisions. I combine reinforcement learning with psychometric modeling to quantify individual decision abilities and support ability assessment in complex environments. I am also interested in method development — particularly in interpretable and robust RL systems that better connect behavioral data with psychological theory.
-
-      You can find a selection of my projects [here](./#projects).
-
       Hello! I'm Wenqian Xu. I recently completed my M.Sc. in Statistics and Management at Shanghai University of Finance and Economics (SUFE), where I worked with [Dr. Fan Zhou](https://scholar.google.com/citations?hl=en&user=4QJkjl0AAAAJ). I received my B.Sc. in Statistics from the China University of Geosciences, advised by [Dr. Deyi Xu](https://jgxy.cug.edu.cn/info/1161/6143.htm) and [Dr. Yongguang Zhu](https://scholar.google.com/citations?user=rpNV_GYAAAAJ&hl=en). I am currently collaborating with [Dr. Feng Ji](https://www.feng-ji.org/) at the University of Toronto on computational modeling in psychology.
 
       My research focuses on how humans learn and make decisions. I combine reinforcement learning with psychometric modeling to quantify individual decision abilities and support ability assessment in complex environments.I am also interested in advancing interpretable and robust RL methods, and in data quality for machine learning and large language models. You can find a selection of my projects [here](./#projects).
