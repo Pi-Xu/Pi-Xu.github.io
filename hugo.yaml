@@ -107,9 +107,19 @@ params:
       
       My research interests are centered around **Model-Based Reinforcement Learning, Large Language Models, Explainable AI**, and **Visualization**. I focus on optimizing model training processes and enhancing learning efficiency through **Active Learning** strategies. You can view some of my completed projects [here](./#projects).
       
-      Additionally, I maintain a [Chinese Page](./pages-zn/) where I record my life using Mandarin.
 
-    
+      Hello! I'm Wenqian Xu. I recently completed my M.Sc. in Statistics and Management at Shanghai University of Finance and Economics (SUFE), where I worked with Prof. Fan Zhou. I received my B.Sc. in Statistics from the China University of Geosciences, advised by Prof. Deyi Xu and Prof. Yongguang Zhu. I am currently collaborating with Dr. Feng Ji at the University of Toronto on computational modeling in psychology.
+
+      My research focuses on how humans learn and make decisions. I combine reinforcement learning with psychometric modeling to quantify individual decision abilities and support ability assessment in complex environments. I am also interested in method development — particularly in interpretable and robust RL systems that better connect behavioral data with psychological theory.
+
+      You can find a selection of my projects [here](./#projects).
+
+      Hello! I'm Wenqian Xu. I recently completed my M.Sc. in Statistics and Management at Shanghai University of Finance and Economics (SUFE), where I worked with [Dr. Fan Zhou](https://scholar.google.com/citations?hl=en&user=4QJkjl0AAAAJ). I received my B.Sc. in Statistics from the China University of Geosciences, advised by [Dr. Deyi Xu](https://jgxy.cug.edu.cn/info/1161/6143.htm) and [Dr. Yongguang Zhu](https://scholar.google.com/citations?user=rpNV_GYAAAAJ&hl=en). I am currently collaborating with [Dr. Feng Ji](https://www.feng-ji.org/) at the University of Toronto on computational modeling in psychology.
+
+      My research focuses on how humans learn and make decisions. I combine reinforcement learning with psychometric modeling to quantify individual decision abilities and support ability assessment in complex environments.I am also interested in advancing interpretable and robust RL methods, and in data quality for machine learning and large language models. You can find a selection of my projects [here](./#projects).
+
+      Additionally, I keep a [Chinese Page](./pages-zn/) where I occasionally write about my life.
+
     skills:
       enable: false
       title: "Research Interests:"
@@ -132,7 +142,7 @@ params:
         date: "Sep 2022 -- Jun 2024"
         GPA: "3.58 out of 4.0"
         content: |-
-          - Second-class academic scholarship(2022, 2023)
+          - Academic scholarship(2022, 2023)
       - title: "Bachelor of Science in Statistics"
         school:
           name: "China University of Geosciences"
@@ -144,26 +154,24 @@ params:
           - 13th Li Siguang Program (selective, <40 students annually)
           - Outstanding Undergraduate Thesis (<5\% awarded)
           - National Scholarship(2019), Academician Scholarship(2021)
-        # featuredLink:
-        #   enable: true
-        #   name: "My academic record"
-        #   url: "https://example.com"
-      # - title: "High School"
-      #   school:
-      #     name: "Thomas Jefferson High School for Science and Technology."
-      #     url: "https://example.org"
-      #   GPA: "4.2 out of 5.0"
-      #   featuredLink:
-      #     enable: true
-      #     url: "https://example.com"
 
   # projects
   projects:
     enable: true
     title: "Projects and Publications"
     items:
+      - title: Psychometric Reinforcement Learning (Psychometric RL)
+        content: Reinforcement learning as a measurement model for estimating individual decision abilities
+        image: /images/projects/psychorl_logo.png
+        featured:
+          name: Webpage
+          openInNewTab: false
+          link: /off-rl-psycho-notes/
+        badges:
+          - "Reinforcement Learning"
+          - "Psychometrics"
       - title: InfluenceDriven Training
-        content: Enhancing Training Robustness through Influence Measurement
+        content: Enhancing Prediction Performance through Influence Measure
         image: /images/projects/fi_comp_cover.png
         featured:
           name: Webpage
@@ -181,7 +189,7 @@ params:
           - "Sensitivity Analysis"
           - "ICLR 2025"
       - title: MBRL with BDE
-        content: Improvement Research on RL Algorithms Based on Bayesian Dynamic Ensemble
+        content: Improving Reinforcement Learning via Bayesian Dynamic Ensembles
         image: /images/projects/cartpole.png
         featured:
           name: Webpage

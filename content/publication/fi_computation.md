@@ -1,5 +1,5 @@
 ---
-title: "Enhancing Training Robustness through Influence Measurement"
+title: "Enhancing Prediction Performance through Influence Measure"
 date: 2024-05-01T21:35:11+08:00
 draft: false
 author: Wenqian
