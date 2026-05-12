@@ -129,7 +129,6 @@ params:
           name: "Shanghai University of Finance and Economics"
           url: "https://english.sufe.edu.cn"
         date: "Sep 2022 -- Jun 2024"
-        GPA: "86.78 out of 100"
         content: |-
           - Academic scholarship(2022, 2023)
       - title: "Bachelor of Science in Statistics"
@@ -137,9 +136,7 @@ params:
           name: "China University of Geosciences"
           url: "https://en.cug.edu.cn/"
         date: "Sep 2018 -- Jun 2022"
-        GPA: "4.04 out of 5.0"
         content: |-
-          - Ranking: 1/26
           - 13th Li Siguang Program (selective, <40 students annually)
           - Outstanding Undergraduate Thesis (<5\% awarded)
           - National Scholarship(2019), Academician Scholarship(2021)
